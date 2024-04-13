@@ -21,9 +21,18 @@
                     <h3 class="text-center mb-2">{{ Auth::user()->nombres }} {{ Auth::user()->apellidos }}</h3>
 
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#" class="text-decoration-none">Creación de cuentas de ahorros</a></li>
-                        <li class="list-group-item"><a href="#" class="text-decoration-none">Transacciones (Retiros o Depósitos)</a></li>
-                        <li class="list-group-item"><a href="#" class="text-decoration-none">Consulta de saldo de cuenta</a></li>
+                        <li class="list-group-item">
+                            <a href="/creacioncuenta" class="text-decoration-none">Creación de Cuentas de ahorro</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/creacionclientes" class="text-decoration-none">Creación de clientes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/movimientos" class="text-decoration-none">Transacciones (Retiros o Depósitos)</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/vistacuenta" class="text-decoration-none">Consulta de saldo de cuenta</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -31,3 +40,4 @@
     </div>
 </div>
 @endsection
+

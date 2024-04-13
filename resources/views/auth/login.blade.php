@@ -6,7 +6,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header text-center bg-white">
-                    <img src="{{ asset('images/logoBanco.jpg') }}" alt="Logo del Banco de Guatemala" class="logo mb-3">
+                    <img src="{{ asset('images/logoBanco.jpg') }}" alt="Logo del Banco de Guatemala" class="logo mb-3" style="width: 100px; height: auto;">
                     <h2 class="text-dark">{{ __('Iniciar Sesión - Banco de Guatemala') }}</h2>
                 </div>
                 <div class="card-body">
@@ -46,12 +46,14 @@
                             <button type="submit" class="btn btn-primary btn-lg">
                                 {{ __('Iniciar Sesión') }}
                             </button>
-                            @if (Route::has('password.request'))
+                        </div>
+                        @if (Route::has('password.request'))
+                            <div class="text-center">
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('¿Olvidaste tu contraseña?') }}
                                 </a>
-                            @endif
-                        </div>
+                            </div>
+                        @endif
                     </form>
                 </div>
             </div>
